@@ -87,7 +87,7 @@ big_df = get_data_to_df(instance)
 
 new_df = big_df
 
-st.title("A quick Fall 2022 Fellows Diagnostic Dashboard from Omar")
+st.title("A quick Seekr Dashboard from Omar")
 
 # filt = st.selectbox("Select the College", pd.unique(df_expected['College/University']))
 # new_df = df_expected[df_expected['College/University'] == filt]
