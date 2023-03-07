@@ -79,11 +79,18 @@ def get_data_to_df(inst="FY23 LearnUpon"):
 st.sidebar.header("Find your instance here")
 instance = st.sidebar.selectbox(
     "Select Instance",
-    ("Winter23 Fellowship Applicants", "FY23 LearnUpon",
-     "W23 CUNY FIF Accelerator", "Summer 22 Fellowship Applicants")
+    ("Winter 2023 Fellows", "Discovery Students",
+     "Winter 2023 CUNY FIF", "Summer 2022 Fellows")
 )
 
-big_df = get_data_to_df(instance)
+inst_d = {
+    "Winter 2023 Fellows": "Winter23 Fellowship Applicants",
+    "Discovery Students": "FY23 LearnUpon",
+    "Winter 2023 CUNY FIF": "W23 CUNY FIF Accelerator",
+    "Summer 2022 Fellows": "Summer 22 Fellowship Applicants"
+}
+
+big_df = get_data_to_df(inst_d[instance])
 
 new_df = big_df
 
