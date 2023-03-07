@@ -201,3 +201,5 @@ with cola:
     st.markdown("""
     It is normal to see a significant number of students be unsure of what salary they can expect.
     """)
+
+st.dataframe(new_df)
